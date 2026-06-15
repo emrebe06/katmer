@@ -33,6 +33,33 @@ First MVP:
 
 ## Build Native Core
 
+Clone and build Katmer:
+
+```bash
+git clone https://github.com/emrebe06/katmer.git
+cd katmer
+cmake -S cpp -B build
+cmake --build build --config Release
+```
+
+Windows output:
+
+```text
+build/Release/katmer_bake.exe
+build/Release/katmer_core.dll
+```
+
+Linux/macOS output:
+
+```text
+build/katmer_bake
+libkatmer_core.so or libkatmer_core.dylib
+```
+
+See [docs/INSTALL.md](docs/INSTALL.md) for platform-specific commands.
+
+## Build From Existing Checkout
+
 ```bash
 cmake -S cpp -B build
 cmake --build build --config Release
@@ -43,6 +70,18 @@ cmake --build build --config Release
 ```bash
 build/Release/katmer_bake.exe katmer < examples/http_payload.katmer
 build/Release/katmer_bake.exe katmer < examples/dsp_payload.katmer
+```
+
+Direct Windows example:
+
+```bat
+build\Release\katmer_bake.exe katmer "<katmer module=\"http\" type=\"request\">GET /health</katmer>"
+```
+
+Linux/macOS example:
+
+```bash
+./build/katmer_bake katmer '<katmer module="http" type="request">GET /health</katmer>'
 ```
 
 ## C API Shape
