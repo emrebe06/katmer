@@ -1,0 +1,3 @@
+<katmer module="audio" type="dsp.pipeline">
+lowpass cutoff=1200 gain=-3 source=input.wav target=output.wav
+</katmer>

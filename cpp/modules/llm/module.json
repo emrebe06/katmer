@@ -1,0 +1,7 @@
+{
+  "name": "llm",
+  "status": "builtin",
+  "purpose": "Prompt, tool-call, and agent payload shaping",
+  "inputTypes": ["prompt", "tool", "agent"],
+  "selectKind": "llm"
+}

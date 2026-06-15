@@ -1,0 +1,6 @@
+<katmer module="http" type="request">
+POST /orders
+Content-Type: application/json
+
+{"id":1,"sku":"KATMER-001"}
+</katmer>

@@ -1,0 +1,11 @@
+{
+  "name": "http",
+  "status": "builtin",
+  "purpose": "HTTP request/response shaping, route selection, guard metadata, and JSON output",
+  "inputTypes": ["request", "response", "json"],
+  "selectKind": "http",
+  "examples": [
+    "<katmer module=\"http\" type=\"request\">GET /health</katmer>",
+    "<katmer module=\"http\" type=\"request\">POST /orders\\n{ \"id\": 1 }</katmer>"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "audio",
+  "aliases": ["dsp"],
+  "status": "builtin",
+  "purpose": "Audio conversion and DSP job shaping for low-latency native pipelines",
+  "inputTypes": ["dsp.pipeline", "dsp.filter", "dsp.analyze", "metadata"],
+  "selectKind": "dsp",
+  "examples": [
+    "<katmer module=\"audio\" type=\"dsp.pipeline\">lowpass cutoff=1200 gain=-3</katmer>",
+    "<katmer module=\"dsp\" type=\"dsp.analyze\">fft window=2048 source=input.wav</katmer>"
+  ]
+}

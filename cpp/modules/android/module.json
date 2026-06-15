@@ -1,0 +1,7 @@
+{
+  "name": "android",
+  "status": "builtin",
+  "purpose": "Mobile automation and Android bridge payload shaping",
+  "inputTypes": ["automation", "intent", "device"],
+  "selectKind": "android"
+}

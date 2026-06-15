@@ -1,0 +1,7 @@
+{
+  "name": "video",
+  "status": "builtin",
+  "purpose": "Video conversion and stream job payload shaping",
+  "inputTypes": ["job", "metadata", "thumbnail"],
+  "selectKind": "video"
+}

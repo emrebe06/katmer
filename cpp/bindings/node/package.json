@@ -1,0 +1,11 @@
+{
+  "name": "@katmer/native",
+  "version": "0.1.0",
+  "description": "Node.js binding for Katmer native bake",
+  "type": "module",
+  "main": "index.mjs",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": "./index.mjs"
+  }
+}
