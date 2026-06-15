@@ -1,8 +1,21 @@
 # Katmer
 
-Katmer is a layered execution engine.
+Katmer is a native C/C++ layered execution engine with a stable C ABI.
 
-It receives input, bakes it through thin layers, collects signals, and returns a structured result.
+It receives input, bakes it through thin layers, collects signals, and returns a structured JSON result. Katmer is designed for language bindings, plugin backends, HTTP/DSP payload shaping, native worker layers, and future Python/JavaScript/Kotlin integration.
+
+## Ecosystem
+
+Katmer is the native layer in a small Python-first runtime ecosystem:
+
+- [QuickAPI](https://github.com/emrebe06/QuickAPI): JSON-first Python API runtime.
+- [SQLNocturne](https://github.com/emrebe06/sqlnocturne): safety-first SQL data runtime.
+
+Katmer can run alone through its C ABI. In the ecosystem, it acts as the worker floor under higher-level Python APIs.
+
+## Keywords
+
+C ABI runtime, native execution engine, C++ layered runtime, Python native bridge, JavaScript native binding, Kotlin JNI runtime, plugin backend engine, DSP payload runtime, HTTP payload parser, arena allocator, JSON trace engine.
 
 First MVP:
 
